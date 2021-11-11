@@ -3,7 +3,7 @@ import { View, Animated, Text } from "react-native";
 
 class Deck extends Component {
   renderCard(item) {
-    return <Text>{`${item.text} Water`}</Text>;
+    return <Text key={item.text}>{`${item.text} Water`}</Text>;
   }
 
   renderCards() {

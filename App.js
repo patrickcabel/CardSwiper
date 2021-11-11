@@ -1,8 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { StyleSheet, Text, View } from "react-native";
-//import Ball from './src/Ball.js'
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import Ball from "./src/Ball.js";
 import Deck from "./src/Deck.js";
 
 const DATA = [
@@ -51,10 +51,10 @@ const DATA = [
 class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <Deck data={DATA}></Deck>
         <StatusBar style="auto" />
-      </View>
+      </SafeAreaView>
     );
   }
 }
@@ -64,5 +64,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
+    paddingTop: 45,
   },
 });
