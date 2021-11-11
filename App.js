@@ -4,7 +4,7 @@ import { render } from "react-dom";
 import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import Ball from "./src/Ball.js";
 import Deck from "./src/Deck.js";
-
+import styles from './app.styles'
 const DATA = [
   {
     id: 1,
@@ -60,10 +60,4 @@ class App extends Component {
 }
 
 export default App;
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    paddingTop: 45,
-  },
-});
+
