@@ -4,12 +4,14 @@ import { render } from "react-dom";
 import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import Ball from "./src/Ball.js";
 import Deck from "./src/Deck.js";
-import styles from './app.styles'
+import styles from "./app.styles";
+import { Card, Button } from "react-native-elements";
+
 const DATA = [
   {
     id: 1,
     text: "Card #1",
-    uri: "http://imgs.abduzeedo.com/files/paul0v2/unsplash/unsplash-04.jpg",
+    uri: "https://cdn.vox-cdn.com/thumbor/J2XSqgAqREtpkGAWa6rMhkHA1Y0=/0x0:1600x900/1400x933/filters:focal(672x322:928x578):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/66320060/Tanjiro__Demon_Slayer_.0.png",
   },
   {
     id: 2,
@@ -60,4 +62,3 @@ class App extends Component {
 }
 
 export default App;
-
